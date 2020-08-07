@@ -1,0 +1,206 @@
+/* CSS Standard Rules */
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    min-height: 100vh;
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/*
+    a:hover,
+    a:focus {
+        text-decoration: underline;
+    }
+    */
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.typographic {
+    list-style: initial;
+    padding-left: inital;
+}
+
+  /* For 'accessibility text'. */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+  /* Project Specific Rules */
+
+
+body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+header h1 {
+    color: #303338;
+    font-weight: 100;
+    font-size: 10rem;
+}
+
+.diagonal {
+    position: absolute;
+    top: 40%;
+    height: 600px;
+    width: 100%;
+    transform: skewY(-5deg);
+    background-color: #cfe2c3;
+    z-index: -1;
+}
+
+.container {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.profiles-mount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.profile-card{
+    width: 300px;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    margin: 20px 10px 0px 10px;
+    background: #fff;
+}
+
+.profile-card header{
+    display: block;
+    background: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.profile-card header img{
+    border-radius: 100%;
+    width: 150px;
+    border: 5px solid #cfe2c3;
+}
+
+.profile-card header h1{
+    font-weight: 100;
+    font-size: 3.6rem;
+    color: #444;
+    margin: 10px 0 0 0;
+    
+}
+
+.profile-card header h2{
+    font-weight: 100;
+    font-size: 2rem;
+    color: #666;
+    margin: 0;
+}
+
+.profile-card header h3{
+    font-weight: 400;
+}
+
+.personal-details {
+    text-transform: capitalize;
+}
+
+.profile-card .profile-bio{
+    padding: 0 30px;
+    text-align: center;
+    color: #888;
+    font-weight: 100;
+}
+
+.profile-card .email {
+    font-weight: normal;
+}
+
+.profile-card .separator-line {
+    border-bottom: 2px solid #cfe2c3;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 85%;
+}
+
+.profile-card footer {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card .profile-social-links{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.profile-card .profile-social-links li a:hover{
+    filter: drop-shadow(0 0 0.75rem rgba(0,0,0,.50));
+}
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.button {
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    background: #58c;
+    border-radius: 2px;
+    border: 0px solid #246;
+    border-width: 0px 0px 4px 0px;
+    padding: 15px 30px 15px 30px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal
+}
+
+.footer {
+    font-weight: 100;
+}
