@@ -1,12 +1,11 @@
 
-const endpoint = 'https://randomuser.me/api/?results=12&exc=login'
+const endpoint = 'https://randomuser.me/api/?results=6&exc=login'
 
 var usersArray = [];
 const profilesMount = document.querySelector('.profiles-mount');
 
 fetch(endpoint)
     .then(response => response.json())
-    // .then(data => usersArray = data.results)
     .then(data => usersArray = usersArray.concat(data.results))
     .then(function displayUsers(usersArray) {
         const html = usersArray.map(user => {

@@ -76,7 +76,7 @@ body {
 header h1 {
     color: #303338;
     font-weight: 100;
-    font-size: 10rem;
+    font-size: 7.5rem;
 }
 
 .diagonal {
@@ -98,9 +98,14 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: auto; */
 }
 
-.profile-card{
+/* Model profile cards */
+
+.profile-card {
     width: 300px;
     border-radius: 3px;
     box-shadow: 0 3px 3px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
@@ -177,6 +182,9 @@ header h1 {
 .profile-card .profile-social-links li a:hover{
     filter: drop-shadow(0 0 0.75rem rgba(0,0,0,.50));
 }
+
+/* Button  */
+
 .button-wrapper {
     display: flex;
     justify-content: center;
@@ -200,6 +208,8 @@ header h1 {
     font-weight: 700;
     font-style: normal
 }
+
+/* Main Footer */
 
 .footer {
     font-weight: 100;
